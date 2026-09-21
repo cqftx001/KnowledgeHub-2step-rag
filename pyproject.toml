@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "knowledgehub"
+version = "0.1.0"
+description = "A local RAG knowledge base and AI interview preparation system."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.40,<2.0",
+    "pydantic-settings>=2.0,<3.0",
+    "python-dotenv>=1.0,<2.0",
+
+    "sqlalchemy>=2.0,<3.0",
+    "psycopg[binary,pool]>=3.0,<4.0",
+
+    "langchain-core>=1.0,<2.0",
+    "langchain-community>=0.3,<1.0",
+    "langchain-ollama>=1.0,<2.0",
+    "langchain-text-splitters>=1.0,<2.0",
+    "langchain-postgres>=0.0.14,<0.1.0",
+
+    "pypdf>=5.0,<7.0",
+]
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<10.0",
+    "pytest-cov>=6.0,<8.0",
+    "ruff>=0.9,<1.0",
+]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "B",
+    "UP",
+]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

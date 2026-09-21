@@ -1,0 +1,14 @@
+streamlit
+
+pydantic-settings
+
+langchain-core
+langchain-community
+langchain-ollama
+langchain-text-splitters
+langchain-postgres
+
+pypdf
+
+sqlalchemy
+psycopg[binary,pool]
