@@ -8,11 +8,11 @@ PostgreSQL, and pgvector.
 
 ### Document Upload & Indexing
 
-![Document Upload Demo](./docs/assets/knowledge-base.gif)
+![Document Upload Demo](./knowledge-base.gif)
 
 ### RAG Question Answering
 
-![RAG Chat Demo](./docs/assets/rag-chat.gif)
+![RAG Chat Demo](./rag-chat.gif)
 
 ## Features
 
