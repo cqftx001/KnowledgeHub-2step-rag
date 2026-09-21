@@ -1,10 +1,18 @@
 # KnowledgeHub
 
-KnowledgeHub is a local RAG-powered knowledge management and
-technical interview preparation application.
+A local RAG-powered knowledge management and technical interview
+preparation system built with Streamlit, LangChain, Ollama,
+PostgreSQL, and pgvector.
 
-Users can upload documents, search them through semantic retrieval,
-ask knowledge-grounded questions, and practice technical interviews.
+## Demo
+
+### Document Upload & Indexing
+
+![Document Upload Demo](./docs/assets/knowledge-base.gif)
+
+### RAG Question Answering
+
+![RAG Chat Demo](./docs/assets/rag-chat.gif)
 
 ## Features
 
@@ -29,3 +37,11 @@ Application Services
 Document Parser / Ollama / PGVector
     |
 PostgreSQL + pgvector
+
+## Tech Stack
+
+- Streamlit
+- LangChain
+- Ollama
+- PostgreSQL
+- pgvector
